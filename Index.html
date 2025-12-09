@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convertidor Avanzado</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Convertidor de Unidades</h2>
+
+      <div class="row">
+        <input type="number" id="valor" placeholder="Ingresa un valor" />
+
+        <select id="unidadEntrada">
+          <option value="m">Metros</option>
+          <option value="km">Kilómetros</option>
+          <option value="cm">Centímetros</option>
+          <option value="mm">Milímetros</option>
+          <option value="ft">Pies</option>
+          <option value="in">Pulgadas</option>
+        </select>
+
+        <span class="arrow">➡️</span>
+
+        <select id="unidadSalida">
+          <option value="m">Metros</option>
+          <option value="km">Kilómetros</option>
+          <option value="cm">Centímetros</option>
+          <option value="mm">Milímetros</option>
+          <option value="ft">Pies</option>
+          <option value="in">Pulgadas</option>
+        </select>
+      </div>
+      <button id="btnConvertir">Convertir</button>
+
+      <div id="resultado" class="resultado">Resultado aquí...</div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
